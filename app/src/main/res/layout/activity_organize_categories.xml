@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:importantForAutofill="no"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#9090F6"
+    tools:ignore="VisualLintBounds">
+
+    <!-- EditText para nueva categoría -->
+    <EditText
+        android:gravity="center"
+        android:id="@+id/et_nueva_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nueva_categoria"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+    <!-- Botón para añadir categoría -->
+    <Button
+        android:id="@+id/btn_add_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_categoria"
+        android:background="@drawable/button_background"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- ListView para mostrar categorías -->
+    <ListView
+        android:id="@+id/lv_categorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Botón Volver -->
+
+
+</LinearLayout>
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volver"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/volverbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>

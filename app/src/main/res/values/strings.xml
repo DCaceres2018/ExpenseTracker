@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ExpenseTrackerV01</string>
+    <string name="organizar_categor_as_y_datos">Organizar Categorías</string>
+    <string name="a_adir_gastos">Añadir Gastos</string>
+    <string name="resumen_de_gastos">Resumen de Gastos</string>
+    <string name="importe">Importe</string>
+    <string name="subcategoria_opcional">(opcional)</string>
+    <string name="guardar_gasto">Guardar Gasto</string>
+    <string name="nueva_categoria">Nueva Categoria</string>
+    <string name="add_categoria">Añadir Categoría</string>
+    <string name="volver">Volver</string>
+    <string name="categoria">Categoría</string>
+    <string name="add_subcategoria">Añadir subcategoría</string>
+    <string name="nueva_subcategoria">Nueva Subcategoría</string>
+    <string name="metodo_de_pago">Método de Pago</string>
+    <string name="eliminar">Eliminar</string>
+    <string-array name="payment_methods">
+            <item>Efectivo</item>
+            <item>Bizum</item>
+            <item>Tarjeta</item>
+    </string-array>
+</resources>

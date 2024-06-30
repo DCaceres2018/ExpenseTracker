@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#9090F6">
+
+    <!-- Título "Añadir Gastos" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir Gastos"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#000000"
+    android:paddingBottom="16dp" />
+
+    <!-- Importe -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Importe:"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"/>
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <!-- Categoría -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoría:"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_categoria"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Categoría"
+        android:minHeight="48dp" />
+
+    <!-- Método de pago -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Método de pago:"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/sp_payment_method"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"/>
+
+    <!-- Subcategoría -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subcategoría:"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"/>
+
+    <EditText
+        android:id="@+id/et_subcategory"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/subcategoria_opcional"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- Fecha -->
+    <EditText
+        android:id="@+id/et_fecha"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Fecha (dd/mm/yyyy)"
+        android:inputType="date" />
+
+    <!-- Botón Guardar Gasto -->
+    <Button
+        android:id="@+id/btn_save_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar_gasto"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="16dp" />
+
+    <!-- Total de Gastos -->
+    <TextView
+        android:id="@+id/et_gastos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total de Gastos: "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón Volver -->
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/btn_volverExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volver"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/volverbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>
+
+
